@@ -1,0 +1,38 @@
+footer {
+    background-color: $black;
+    color:white;
+    
+}
+
+.footer {
+    &__nav {
+        width: 50%;
+        ul {
+            list-style-type: none;
+            li {
+                padding-bottom: 15px;
+                padding-top: 15px;
+                text-decoration: none;
+                width: 20%;
+                border-bottom: 1px solid white;
+                &:first-of-type {
+                    border-top: 1px solid white;
+                }
+            }
+            a {
+                color: white;
+                text-decoration: none;
+                margin-left: 3px;
+            }
+        }
+    }
+    
+    &__text {
+        width: 50%;
+        color:white;
+        text-align: right;
+        p {
+            padding: 15px 0px;
+        }
+    }
+}

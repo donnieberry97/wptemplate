@@ -1,0 +1,105 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 1rem;
+    line-height: 2.7rem;
+}
+
+html {
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family: 'Ubuntu', sans-serif;
+    @media (max-width: 75em) {
+        font-size: 3.5rem;
+    }
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222222;
+    margin-bottom: 2rem;
+}
+
+h4 {
+    text-transform: none;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #222222;
+}
+
+h5 {
+    text-transform: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #222222;   
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #111111;
+    @media (max-width: 75em) {
+        font-size: 0.8rem;
+    }
+}
+
+p.smallp {
+    line-height: 1.6;
+    font-size: 0.7rem;
+    margin: 1rem 0rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    color: #444444;
+    @media (max-width: 75em) {
+        font-size: 0.8rem;
+    }
+    
+    &::after {
+        content: '';
+        position: absolute;
+        height:5px;
+        border-bottom: 1px solid #e0e6ed;
+        top:3px;
+        bottom: 100%;
+        width: 100%;
+        margin-left: 5px;
+    }
+}
+
+.white {
+    color:#fff;
+}
+
+.align {
+    &__right {
+        text-align:right;
+    }
+    &__left {
+        text-align: left;
+    }
+}
+
+.rightSide {
+    .align {
+        &__right {
+            padding: 10rem 0rem;
+        }
+    }
+}
+
+.textCentre {
+    text-align: center;
+}
